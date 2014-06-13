@@ -11,6 +11,19 @@ CREATE TABLE Planets (
   PRIMARY KEY (Name)
 );
 
+#  Dumping data for table `Planets` ######################
+
+
+INSERT INTO `Planets` (`Name`, `NumMoons`, `Type`, `LengthOfYear`) VALUES
+('Earth', 1, 'Rocky', 1.000),
+('Jupiter', 16, 'Gas', 11.860),
+('Mars ', 2, 'Rocky', 1.880),
+('Mercury', 0, 'Rocky ', 0.240),
+('Pluto', 1, 'Rocky', 247.700),
+('Satum', 18, 'Gas', 29.460),
+('Venus', 0, 'Rocky', 0.620);
+
+
 # 2 ########################################################
 
 CREATE TABLE Probes (
@@ -19,6 +32,17 @@ CREATE TABLE Probes (
   dest varchar(10) NOT NULL,
   PRIMARY KEY (name)
 );
+
+#  Dumping data for table `Probes`  ########################
+
+INSERT INTO `Probes` (`name`, `Year`, `dest`) VALUES
+('Pioneer 5', 1960, 'sun'),
+('Mariner', 1974, 'Mercury'),
+('Messenger', 2008, 'Mercury'),
+('Zond', 1964, 'Venus'),
+('Viking', 1976, 'Mars'),
+('Cassini', 2000, 'jupiter'),
+('Galileo', 1995, 'Jupiter');
 
 # 3 ########################################################
 
