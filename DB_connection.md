@@ -1,4 +1,4 @@
-### Assignment 2
+### DB_connection Assignment
 
 ### PHP to SQL Connection
 
