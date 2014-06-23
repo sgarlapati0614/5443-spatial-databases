@@ -91,8 +91,7 @@ WHERE TYPE =  'Rocky'
 SELECT Probes.name
 FROM  `Probes` 
 JOIN Planets ON Planets.Name = dest
-WHERE  LengthOfYear <= ALL(SELECT LengthOfYear
-							FROM Planets)
+WHERE  LengthOfYear <= ALL(SELECT LengthOfYear	FROM Planets)
 							
 # 10 #########################################################		
 
